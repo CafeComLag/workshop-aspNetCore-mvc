@@ -23,6 +23,15 @@ namespace SalesWebMcv.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles Web MVC App from C# Course";
+            ViewData["email"] = "nicholas.saraivadev@gmail.com";
+            ViewData["Student"] = "Nicholas Saraiva";
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
